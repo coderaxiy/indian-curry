@@ -29,30 +29,32 @@ const Home = () => {
                 {
                   images.map((val,id) => (
                     <SlideItem key={id}>
-                      <img src={val.img} alt="" />
+                      <img src={val.img}  alt="" />
                     </SlideItem>
                   ))
                 }
             </Carousel>
       </CarWrap>
-      <div className='title'>Working Hours</div>
       <Container>
         <Hours>
+        <div className='title'>Working Hours</div>
           <div>Monday ~ Sunday - 10:00 am - 10:00 pm</div>
+          <div>Tuesday ~ Day Off</div>
           <div className='attent'>Kitchen closes 30 minutes before closing time</div>
-          <div>Reservations - 010-8888-8888</div>
+          <div>Reservations - 042-825-9937</div>
         </Hours>
         <Adress>
+        <div className='title'>Our Location</div>
           <div>Indian Curry N9</div>
           <div>대전광역시 유성구 대학로 169 Daejeon</div>
           <div>Click to navigation link below</div> <span> <a href=" http://kko.to/Gyk85dNhW"><FaMapMarkerAlt /> Kakao map</a></span>
         </Adress>
-        <Footer>
+        {/* <Footer>
           <div className='wrapper'>
             <div>حلال</div>
             <div>Halal</div>
           </div>
-      </Footer>
+      </Footer> */}
       </Container>
       <SpeedDial
         ariaLabel="SpeedDial basic example"

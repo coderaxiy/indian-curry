@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { DrawerTitle, Links, LinkWrap, Logo, Wrap } from './style'
 import {BiMenuAltRight} from 'react-icons/bi'
 import {RiRestaurantLine} from 'react-icons/ri'
@@ -13,16 +13,26 @@ import {BiCoffeeTogo} from 'react-icons/bi'
 import {GiCakeSlice} from 'react-icons/gi'
 
 
+
 const menu = (
     <Menu>
       <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
-          AllDay Menu
+          <Link to={'/salads'}>Salads</Link>
       </Menu.Item>
       <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
-          Beverage Menu
+          <Link to={'/soups'}>Soups</Link>
       </Menu.Item>
       <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
-          Dessert Menu
+          <Link to={'/grilledmeat'}>Grilled Meat</Link>
+      </Menu.Item>
+      <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
+          <Link to={'/maindishes'}>Main Dishes</Link>
+      </Menu.Item>
+      <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
+          <Link to={'/fastfood'}>Fast Food</Link>
+      </Menu.Item>
+      <Menu.Item style={{color:'#212121', padding:'10px 30px', fontSize:'16px', fontFamily:'Montserrat', fontWeight:'600'}}>
+          <Link to={'/drinks'}>Drinks</Link>
       </Menu.Item>
     </Menu>
   );

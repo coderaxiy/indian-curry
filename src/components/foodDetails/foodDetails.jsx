@@ -16,14 +16,14 @@ const FoodDetails = () => {
         {
             selected.map((val) => (
                 <Wrapper key={[val.id]}>
-                    <img src={[val.img]} alt="" />
+                        <img src={[val.img]} alt="" />
                     <div className='title-wrap'>
                         <div className='title'>{[val.title]}</div>
                         <div className='price'>{[val.price]}₩</div>
                     </div>
                         <div className='ingredients'>{[val.uzb]}</div>
                         <div className='ingredients'>{[val.eng]}</div>
-                        <div className='time'>Time: 10 min</div>
+                        <div className='time'>Preparation Time: 10 - 15 min</div>
                 </Wrapper>
             ))
         }

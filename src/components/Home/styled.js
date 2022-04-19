@@ -5,35 +5,32 @@ display: flex;
 flex-direction: column;
 box-sizing: border-box;
 align-items: center;
-width: 100%;
+justify-content: center;
+/* width: 100%; */
 position: relative;
 .title{
     font-size: 30px;
     font-family: 'Laila';
     color: wheat;
-    margin-top: 3rem;
+    margin-bottom: 1rem;
 }
 `
 
 export const SlideItem = styled.div`
-height: 50vh;
-img{
-    height: inherit;
-}
+height: 70vh;
 `
 
 export const CarWrap = styled.div`
-width: 100%;
-background-color: gray;
+width: 90%;
+margin-top: 2rem;
 `
 
 export const Container = styled.div`
-padding: 2rem 2rem 5rem 2rem;
+padding: 5rem 2rem 5rem 2rem;
 width: 100%;
 display: flex;
 flex-wrap: wrap;
-align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 @media (max-width: 1000px){
     flex-direction: column;
     gap: 30px;

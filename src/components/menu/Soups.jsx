@@ -14,9 +14,9 @@ const Soups = () => {
       <ItemWrap>
           {
             menu.slice(4,7).map((val)=>(
-              <div key={val.id}>
+              <div key={val.id} className='image-wrap'>
               <img  src={val.img} alt="" />
-              <Link to={`/soups/:${val.id}`}>View More Details</Link>
+              <Link className='link' to={`/soups/:${val.id}`}>View More Details</Link>
               </div>
             ))
           }
