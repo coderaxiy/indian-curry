@@ -62,7 +62,7 @@ const Navbar = () => {
             <BiMenuAltRight onClick={drawerOpen} size={'2.2rem'} color='white' />
             </div>
         </LinkWrap>
-        <Drawer title={<DrawerTitle>Indian Curry</DrawerTitle>} width={'15rem'} maskClosable={'true'} autoFocus={false}
+        <Drawer title={<DrawerTitle>Indian Curry</DrawerTitle>}  width={'20rem'} maskClosable={'true'} autoFocus={false}
                 placement="right" onClose={draweClose} 
                 visible={visible} bodyStyle={{backgroundColor:'#282e30', color:'#ff8200', display:'flex', flexDirection:'column'}}
                 footerStyle={{height:'50px', backgroundColor:'gray'}} closeIcon={<MdOutlineRestaurantMenu size={'1.2rem'} color='red'/>}

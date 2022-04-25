@@ -32,9 +32,6 @@ margin-top: ${(soup)=>(soup ? '30px':'0')};
 
 export const ItemWrap = styled.div`
 margin-top: 2rem;
-display: flex;
-justify-content: center;
-align-items: center;
 img{
     width: 20rem;
     height: 16rem;
@@ -50,20 +47,7 @@ img{
     filter: blur(4px);
     transition: all .3s;
 }
-.link{
-    position:absolute;
-    right: 5rem;
-    top: 7rem;
-    text-decoration: none;
-    color: #212121;
-    font-family: 'Laila';
-    font-size: 15px;
-    font-weight: 800;
-    border: 2px solid black;
-    padding: 5px;
-    display: none;
-    animation: hover 3s linear 1s ;
-}
+
 @keyframes hover {
     from{display: flex;
          transition: all .3s;
@@ -74,15 +58,8 @@ img{
 }
 .flex-wrap{
     display: grid;
-    grid-template-columns: auto auto auto;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     align-items: center;
     gap: 2rem;
-    @media (max-width:1200px){
-        grid-template-columns: auto auto;
-    }
-    @media (max-width:750px){
-        grid-template-columns: auto;
-    }
 }
 `

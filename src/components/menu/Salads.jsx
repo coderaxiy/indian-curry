@@ -18,8 +18,7 @@ const Salads = () => {
           {
             menu.slice(0,4).map((val)=>(
               <div className='image-wrap' key={val.id}>
-              <img  src={val.img} alt="" />
-              <Link className='link' to={`/salads/:${val.id}`}>View More Details</Link>
+              <Link to={`/soups/:${val.id}`}><img  src={val.img} alt="" /></Link>
               </div>
             ))
           }

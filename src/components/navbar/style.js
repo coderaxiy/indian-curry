@@ -7,6 +7,7 @@ display: flex;
 align-items: center;
 background-color: #212121;
 justify-content: space-between;
+
 `
 export const Logo = styled.div`
 font-size: 2rem;
